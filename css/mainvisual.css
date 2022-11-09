@@ -1,0 +1,40 @@
+.mainvisual {
+  width: 100%;
+  position: relative;
+  background: #ececec;
+  border-bottom: 2px solid #00c2cb;
+}
+.mainvisual .mainvisual_img {
+  width: 70%;
+  padding: 25% 0;
+  position: relative;
+}
+.mainvisual .mainvisual_img::before {
+  content: "";
+  width: 110%;
+  height: 70%;
+  background: #00c2cb;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -10;
+}
+.mainvisual .mainvisual_title {
+  width: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
+@media screen and (min-width: 1050px) {
+  .mainvisual .mainvisual_img {
+    padding: 0;
+  }
+  .mainvisual .mainvisual_img::before {
+    display: none;
+  }
+}

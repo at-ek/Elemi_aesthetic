@@ -1,0 +1,141 @@
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-bottom: 1px solid #252525;
+}
+header .header_logo {
+  width: 25%;
+  max-width: 200px;
+}
+header .header_nav {
+  margin-right: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+header .header_nav a {
+  width: 7em;
+  height: 100%;
+  padding: 4px 0;
+  color: #252525;
+  text-align: center;
+  display: block;
+  border-right: 1px solid #252525;
+}
+header .header_nav a:first-of-type {
+  border-left: 1px solid #252525;
+}
+
+.mainvisual {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #00c2cb;
+}
+.mainvisual .mainvisual_img {
+  width: 70%;
+  padding: 25% 0;
+  position: relative;
+}
+.mainvisual .mainvisual_img::before {
+  content: "";
+  width: 110%;
+  height: 70%;
+  background: #00c2cb;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: -10;
+}
+.mainvisual .mainvisual_title {
+  width: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 10;
+  transform: translateY(-50%);
+}
+
+main {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 64px 0;
+}
+.content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.about p {
+  padding: 0 24px;
+}
+
+.address h3 {
+  line-height: 3;
+  background: #ececec;
+}
+.address table {
+  margin: 0 auto 24px;
+  border-collapse: collapse;
+}
+.address table th, .address table td {
+  border-bottom: 1px solid #252525;
+  line-height: 2.4;
+}
+.address table th {
+  padding-right: 1em;
+}
+.address .address_map {
+  width: 80%;
+  margin: 0 auto;
+}
+.address .address_map iframe {
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+
+.content2 {
+  padding: 64px 0;
+  margin-left: 40px;
+  margin-right: 16px;
+}
+.content2 .content2_img {
+  width: 70%;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+.content2 .content2_wrap {
+  margin-bottom: 24px;
+}
+.content2 .content2_wrap h4 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+.content2 a {
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  margin-right: 24px;
+  font-family: Arial;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  text-underline-offset: 1em;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+  background: #00c2cb;
+  color: #fff;
+}

@@ -1,0 +1,9 @@
+footer {
+  font-size: 1.3rem;
+}
+footer .copyright {
+  width: 100%;
+  text-align: center;
+  background: #00c2cb;
+  color: #fff;
+}
