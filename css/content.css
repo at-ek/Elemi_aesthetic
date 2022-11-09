@@ -1,0 +1,139 @@
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 64px 10%;
+  transform: translateY(250px);
+  opacity: 0;
+  transition: 1.5s;
+}
+section.active {
+  transform: none;
+  opacity: 1;
+}
+section h3 {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  width: max-content;
+  margin-bottom: 40px;
+  transform: skew(-15deg);
+  text-shadow: 8px 6px 2px rgba(255, 255, 255, 0.2);
+}
+section .box {
+  padding: 0 16px;
+}
+
+.works-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  row-gap: 32px;
+}
+
+.works-item .works-img {
+  margin-bottom: 16px;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  row-gap: 24px;
+}
+.skill-box .skill-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: 16px;
+}
+.skill-box .skill-item .skill-icon {
+  width: 25%;
+  max-width: 200px;
+}
+.skill-box .skill-item .skill-title {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.html .star-icon:not(:last-of-type)::before {
+  color: #FF1A6F;
+}
+
+.css .star-icon:not(:last-of-type)::before {
+  color: #FF1A6F;
+}
+
+.js .star-icon:nth-of-type(1),
+.js .star-icon:nth-of-type(2) {
+  color: #FF1A6F;
+}
+
+.about-box .text {
+  text-align: justify;
+  margin-bottom: 24px;
+  line-height: 2.2;
+}
+
+.about-box .mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  column-gap: 8px;
+}
+.about-box .mail .mail-icon {
+  width: max-content;
+}
+.about-box .mail .mail-icon::before {
+  color: #fff;
+}
+.about-box .mail .adress {
+  text-decoration: underline;
+  display: inline;
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    padding: 80px 10%;
+  }
+  section h3 {
+    font-size: 3rem;
+  }
+  .works-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 48px;
+    row-gap: 38px;
+  }
+  .works-box .works-item {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  section {
+    padding: 96px 10%;
+  }
+  .works-box {
+    column-gap: 64px;
+    row-gap: 56px;
+  }
+  .works-box .works-item {
+    width: 25%;
+    transition: transform 0.25s;
+  }
+  .works-box .works-item:hover {
+    transform: scale(1.1);
+  }
+}
